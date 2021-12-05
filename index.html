@@ -11,7 +11,7 @@
         :root {
             --bs-body-font-family: "Roboto", sans-serif;
             /* el que es color de fondo */
-            --bs-body-bg: rgba(242, 202, 171, 1) !important;
+            --bs-body-bg: rgba(255, 255, 255, 1) !important;
             /* el que es color de texto */            
             --bs-body-color: #222  !important;
             /* el que es color de destaque */
@@ -27,26 +27,16 @@
             font-family: "Roboto Slab", serif;
         }
 
-        body{
-            background: linear-gradient(rgba(227, 231, 212, 1), var(--bs-body-bg));
-        }
-
-        header {
-            padding-top: 50vh;
-            background-image: url(grafica/cel.png);
-            background-position: left top;
-            background-repeat: no-repeat;
-            background-size: auto 60%;
-        }
-
-        @media (min-width: 768px) {
             header {
-                padding-top: 50vh;
+                padding-top: 60vh;
                 background-image: url(grafica/fondopc.png);
-                background-position: center top, right top;
-                background-repeat: no-repeat, ;
-                background-size: auto 50%, ;
+                background-position: center top;
+                background-repeat: no-repeat;
+                background-size: auto 50%;
             }
+
+        aside{
+            background: linear-gradient(#fff, #eee);
         }
     </style>
     <title>Tormenta Ignea 2017</title>
@@ -73,10 +63,10 @@
                     <p>La mayor proporción de daño corresponde a plantaciones forestales (pino radiata); bosques nativos en su mayoría del tipo esclerófilo, y praderas y matorrales. Con relación a las plantaciones forestales, un 52% de la superficie corresponde a grandes empresas forestales, un 29% a pequeños propietarios forestales, un 16% a medianos propietarios y un 3% a empresas medianas. Como una medida de magnitud, en plantaciones lo quemado corresponde al 8% de la superficie nacional. </p>
                 </div>
 
-                <div class="col-md-11 col-lg-10 col-xl-9 col-xxl-8 mx-auto pt-3 pb-4">
+                <div class="col-lg-11 col-xl-10 col-xxl-9 mx-auto pt-3 pb-4">
                     <!--Muestra la imagen más ancha o la cuadrada según pantalla-->
-                    <object data="grafica/ImpactoEnElSectorLow.jpg" type="image/svg+xml" class="d-md-none bg-light"></object>
-                    <object data="grafica/ImpactoEnElSectorLow.jpg" type="image/svg+xml" class="d-none d-md-block bg-light"></object>
+                    <img src="grafica/ImpactoEnElSectorLow.jpg" class="d-md-none w-100">
+                    <img src="grafica/ImpactoEnElSectorLow.jpg" class="d-none d-md-block w-100">
                     <!--Se muestra o no por una clase de Bootstrap que responde al ancho de pantalla-->
                 </div>
 
@@ -148,38 +138,42 @@
                     <p>Si bien se estima que la extensión total de territorios afectados fue cercana a las 500.000 hectáreas, el catastro efectuado por tipos de uso de suelo da cuenta de una cifra de 467.538 hectáreas, entre las regiones de Coquimbo y La Araucanía, siendo la región del Maule la más afectada con alrededor de 280.000 hectáreas.</p>
                 </div>
 
-                <div class="col-md-11 col-lg-10 col-xl-9 col-xxl-8 mx-auto pt-3 pb-4">
+                <div class="text-center">
                     <!--Muestra la imagen más ancha o la cuadrada según pantalla-->
-                    <object data="grafica/mapa-min.svg" type="image/svg+xml" class="d-md-none bg-light"></object>
-                    <object data="grafica/mapa-min.svg" type="image/svg+xml" class="d-none d-md-block bg-light"></object>
+                    <object data="grafica/mapa-min.svg" type="image/svg+xml" class="d-md-none w-75 mx-auto"></object>
+                    <object data="grafica/mapa-min.svg" type="image/svg+xml" class="d-none d-md-block w-50 mx-auto"></object>
                     <!--Se muestra o no por una clase de Bootstrap que responde al ancho de pantalla-->
                 </div>
 
-                <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+                <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto mt-4">
                     <p>Por tipo de uso suelo, el destinado a plantaciones forestales fue el más afectado, también con alrededor de 280.000 hectáreas.</p>
                 </div>
             </div>
         </section>
 
-        <section class="container py-4">
+        <section>
+            <div class="container">
             <div class="row">
                 <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
                     <h3 class="text-center">Aeronaves al rescate</h3>
                     <p>Se movilizaron un total de 1.575 brigadistas de CONAF. 1083 combatientes de BRIFE y BRIFAR y 631 combatientes de la cooperación internacional, que en total suman 3.294 combatientes en la línea de fuego.</p>
                 </div>
-
-                <div class="col-md-11 col-lg-10 col-xl-9 col-xxl-8 mx-auto pt-3 pb-4">
+            </div>
+        </div>
                     <!--Muestra la imagen más ancha o la cuadrada según pantalla-->
-                    <object data="grafica/Rescate-responsive.jpg" type="image/svg+xml" class="d-md-none bg-light"></object>
-                    <object data="grafica/Rescate-final.jpg" type="image/svg+xml" class="d-none d-md-block bg-light"></object>
+                    <img src="grafica/Rescate-responsive.jpg" class="d-md-none bg-light w-100">
+                    <img src="grafica/Rescate-final.jpg" class="d-none d-md-block w-100"></object>
                     <!--Se muestra o no por una clase de Bootstrap que responde al ancho de pantalla-->
-                </div>
-
-                <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+            <div class="container">
+            <div class="row">
+                <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto mt-4">
                     <p>Junto con ello se entregaron elementos de emergencia para personas afectadas o damnificadas(caja de alimentos, agua potable, mascarilla desechable, vivienda de emergencia, etc).</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
+
+
 
         <section class="container pt-4 pb-5">
             <div class="row">
@@ -190,8 +184,8 @@
 
                 <div class="col-md-11 col-lg-10 col-xl-9 col-xxl-8 mx-auto pt-3 pb-4">
                     <!--Muestra la imagen más ancha o la cuadrada según pantalla-->
-                    <object data="grafica/arboles-100.jpg" type="image/svg+xml" class="d-md-none bg-light"></object>
-                    <object data="grafica/arboles-100.jpg" type="image/svg+xml" class="d-none d-md-block bg-light"></object>
+                    <img src="grafica/arboles-100.jpg" class="d-md-none w-100">
+                    <img src="grafica/arboles-100.jpg" class="d-none d-md-block w-100"></object>
                     <!--Se muestra o no por una clase de Bootstrap que responde al ancho de pantalla-->
                 </div>
 
@@ -202,7 +196,7 @@
         </section>
     </main>
 
-    <aside class="bg-light">
+    <aside>
         <div class="container">
             <div class="row py-5">
                 <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto small">
@@ -212,15 +206,15 @@
         </div>
     </aside>
 
-    <footer class="bg-dark">
+    <footer class="bg-light">
         <div class="container">
             <div class="row py-5">
                 <div class="col-sm-12 pb-3">
-                    <h4 class="text-white text-center mb-2 w-75 mx-auto">Más sobre vulnerabilidades y desastres socionaturales en Chile</h4>
+                    <h4 class="text-black-50 text-center mb-2 w-75 mx-auto">Más sobre vulnerabilidades y desastres socionaturales en Chile</h4>
                 </div>
                 <div class="col-sm-4">
                     <div class="card border-0 rounded-0 shadow-sm ">
-                        <img src="grafica/imagen.png" class="card-img-top" />
+                        <img src="https://raw.githubusercontent.com/profesorfaco/dno075-2021-2/main/clase-16/falla_v2/img/grupo-rinihuazo.jpg" class="card-img-top" />
                         <div class="card-body">
                             <p class="card-text small">
                                 <a href="#" class="link-dark fw-bold">El Riñihuazo</a> es el nombre dado al aumento de volumen en el lago Riñihue tras el terremoto de Valdivia de 1960, producto de tres deslizamientos de tierra que
@@ -231,7 +225,7 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="card border-0 rounded-0 shadow-sm ">
-                        <img src="grafica/imagen.png" class="card-img-top" />
+                        <img src="https://raw.githubusercontent.com/profesorfaco/dno075-2021-2/main/clase-16/rinihuazo_v2/img/grupo-falla.jpg" class="card-img-top" />
                         <div class="card-body">
                             <p class="card-text small">
                                 <a href="#" class="link-dark fw-bold">La Falla de Ramón</a> es una falla geológica activa, que se encuentra situada al oriente de Santiago, la capital de Chile, siguiendo el pie del cerro de la sierra de
@@ -242,7 +236,7 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="card border-0 rounded-0 shadow-sm ">
-                        <img src="grafica/imagen.png" class="card-img-top" />
+                        <img src="https://raw.githubusercontent.com/profesorfaco/dno075-2021-2/main/clase-16/rinihuazo_v2/img/grupo-volcan.jpg" class="card-img-top" />
                         <div class="card-body small">
                             <p class="card-text">
                                 <a href="#" class="link-dark fw-bold">El volcán Chaitén</a> entró en erupción el 2008, de manera violenta e inesperada, causando la destrucción total de la ciudad del mismo nombre, donde tuvieron que ser
