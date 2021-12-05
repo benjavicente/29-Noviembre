@@ -1,264 +1,431 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
     <style>
-        @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&family=Roboto:wght@300;400;500&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&family=Roboto:wght@300;400;500&display=swap");
 
-        :root {
-            --bs-body-font-family: "Roboto", sans-serif;
-            /* el que es color de fondo */
-            --bs-body-bg: rgba(255, 255, 255, 1) !important;
-            /* el que es color de texto */            
-            --bs-body-color: #222  !important;
-            /* el que es color de destaque */
-            --bs-primary: #f70;
-        }
+      :root {
+        --bs-body-font-family: "Roboto", sans-serif;
+        /* el que es color de fondo */
+        --bs-body-bg: rgba(255, 255, 255, 1) !important;
+        /* el que es color de texto */
+        --bs-body-color: #222 !important;
+        /* el que es color de destaque */
+        --bs-primary: #f70;
+      }
 
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-family: "Roboto Slab", serif;
-        }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Roboto Slab", serif;
+      }
 
-            header {
-                padding-top: 60vh;
-                background-image: url(grafica/fondopc.png);
-                background-position: center top;
-                background-repeat: no-repeat;
-                background-size: auto 50%;
-            }
+      header {
+        padding-top: 60vh;
+        background-image: url("grafica/imagen-titular.png");
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: auto 50%;
+      }
 
-        aside{
-            background: linear-gradient(#fff, #eee);
-        }
+      footer {
+        background: black;
+      }
+      footer::before {
+        background-color: white;
+        content: "";
+        display: block;
+        height: 300px;
+        background: white url("grafica/arboles-negros.svg") no-repeat center bottom;
+        background-size: contain;
+      }
+      .impacto-forestal {
+        --size: clamp(100px, 10vw, 400px);
+        text-align: center;
+        width: 100%;
+        max-width: 100vw;
+        overflow: hidden;
+        /* padding-left: var(--size); */
+      }
+      .impacto-forestal > img {
+        
+        height: calc(1.1 * var(--size));
+      }
+
+      .impacto-forestal > img:not(:first-child) {
+        margin-left: calc(-1 * var(--size));
+      }
     </style>
+    <meta property="og:title" content="UCalendar" />
+    <meta property="og:description" content="La Tormenta Ignea del 2017" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="grafica/imagen-titular.png" />
+    <meta name="twitter:card" content="summary_large_image" />
     <title>Tormenta Ignea 2017</title>
-</head>
+  </head>
+  <body>
     <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
-                    <h1 class="text-center">La Tormenta Ignea del 2017</h1>
-                    <h2 class="text-center">VULNERABILIDADES Y DESASTRES SOCIONATURALES EN CHILE</h2>
-                    <h6 class="text-center my-4">INFOGRAFÍA DIGITAL | DISEÑO UC</h6>
-                    <p class="lead">
-                        A inicios del año 2017 en el secano costero chileno acontecieron una suma de incendios mega forestales que afectaron principalmente siete regiones del país. Este hecho fue denominado por especialistas como “Tormenta de Fuego”, dada su inusual gravedad que da paso a una nueva generación de incendios a escala mundial, que según expertos de la Unión Europea tiene como causa principal el calentamiento global.
-                    </p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+            <h1 class="text-center">La Tormenta Ignea del 2017</h1>
+            <h2 class="text-center">VULNERABILIDADES Y DESASTRES SOCIONATURALES EN CHILE</h2>
+            <h6 class="text-center my-4">INFOGRAFÍA DIGITAL | DISEÑO UC</h6>
+            <p class="lead">
+              A inicios del año 2017 en el secano costero chileno acontecieron una suma de incendios mega forestales que
+              afectaron principalmente siete regiones del país. Este hecho fue denominado por especialistas como
+              “Tormenta de Fuego”, dada su inusual gravedad que da paso a una nueva generación de incendios a escala
+              mundial, que según expertos de la Unión Europea tiene como causa principal el calentamiento global.
+            </p>
+          </div>
         </div>
+      </div>
     </header>
     <main>
-        <section class="container py-4">
-            <div class="row">
-                <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
-                    <h3 class="text-center">El Impacto Silvoagropecuario</h3>
-                    <p>La mayor proporción de daño corresponde a plantaciones forestales (pino radiata); bosques nativos en su mayoría del tipo esclerófilo, y praderas y matorrales. Con relación a las plantaciones forestales, un 52% de la superficie corresponde a grandes empresas forestales, un 29% a pequeños propietarios forestales, un 16% a medianos propietarios y un 3% a empresas medianas. Como una medida de magnitud, en plantaciones lo quemado corresponde al 8% de la superficie nacional. </p>
-                </div>
+      <section class="container py-4">
+        <div class="row">
+          <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+            <h3 class="text-center">El Impacto Silvoagropecuario</h3>
+            <p>
+              La mayor proporción de daño corresponde a plantaciones forestales (pino radiata); bosques nativos en su
+              mayoría del tipo esclerófilo, y praderas y matorrales. Con relación a las plantaciones forestales, un 52%
+              de la superficie corresponde a grandes empresas forestales, un 29% a pequeños propietarios forestales, un
+              16% a medianos propietarios y un 3% a empresas medianas. Como una medida de magnitud, en plantaciones lo
+              quemado corresponde al 8% de la superficie nacional.
+            </p>
+          </div>
 
-                <div class="col-lg-11 col-xl-10 col-xxl-9 mx-auto pt-3 pb-4">
-                    <!--Muestra la imagen más ancha o la cuadrada según pantalla-->
-                    <img src="grafica/ImpactoEnElSectorLow.jpg" class="d-md-none w-100">
-                    <img src="grafica/ImpactoEnElSectorLow.jpg" class="d-none d-md-block w-100">
-                    <!--Se muestra o no por una clase de Bootstrap que responde al ancho de pantalla-->
-                </div>
+          <div class="impacto-forestal">
+            <!--Muestra la imagen más ancha o la cuadrada según pantalla-->
+            <img src="grafica/impacto-forestal/4.svg" />
+            <img src="grafica/impacto-forestal/3.svg" />
+            <img src="grafica/impacto-forestal/2.svg" />
+            <img src="grafica/impacto-forestal/1.svg" />
+          </div>
 
-                <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
-                    <p>Los pequeños productores agrícolas fueron también afectados con la pérdida de sus ganados y colmenas, que constituían parte importante de su capital de trabajo. Al rededor de 45.000 especies entre Ovejas, Equinos Bovinos y Caprinos y más de 46.000 colmenas fueron contabilizados como pérdida entre las regiones más afectadas.</p>
+          <div class="col-lg-11 col-xl-10 col-xxl-9 mx-auto pt-3 pb-4">
+            <!--Muestra la imagen más ancha o la cuadrada según pantalla-->
+            <img src="grafica/ImpactoEnElSectorLow.jpg" class="d-md-none w-100" />
+            <img src="grafica/ImpactoEnElSectorLow.jpg" class="d-none d-md-block w-100" />
+            <!--Se muestra o no por una clase de Bootstrap que responde al ancho de pantalla-->
+          </div>
 
-                    <div class="row pb-5">
-                        <!--primer gráfico de pérdidas: abeja-->
-                        <article class="col-6 col-xl-3">
-                            <svg width="100%" height="100%" viewBox="0 0 42 42">
-                                <circle cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
-                                <circle cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#ccc" stroke-width="2"></circle>
-                                <!--fíjense en el valor del stroke-dashrray, primero va el porcentaje y luego 100 menos el porcentaje-->
-                                <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#000" stroke-width="2" stroke-dasharray="50 50" stroke-dashoffset="25"></circle>
-                                <!--en el texto corresponde poner el porcentaje-->
-                                <text x="50%" y="29" dominant-baseline="middle" text-anchor="middle" font-size="7">50%</text>
-                                <!--y vayan a buscar a lo que corresponda al centro-->
-                                <image x="15" y="10" width="12" height="12" xlink:href="grafica/icono-abeja.svg" />
-                            </svg>
-                        </article>
-                        <!--segundo gráfico de pérdidas: bovino-->
-                        <article class="col-6 col-xl-3">
-                            <svg width="100%" height="100%" viewBox="0 0 42 42">
-                                <circle cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
-                                <circle cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#ccc" stroke-width="2"></circle>
-                                <!--fíjense en el valor del stroke-dashrray, primero va el porcentaje y luego 100 menos el porcentaje-->
-                                <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#000" stroke-width="2" stroke-dasharray="10 90" stroke-dashoffset="25"></circle>
-                                <!--en el texto corresponde poner el porcentaje-->
-                                <text x="50%" y="29" dominant-baseline="middle" text-anchor="middle" font-size="7">10%</text>
-                                <!--y vayan a buscar a lo que corresponda al centro-->
-                                <image x="15" y="10" width="12" height="12" xlink:href="grafica/icono-vaca.svg" />
-                            </svg>
-                        </article>
-                        <!--tercer gráfico de pérdidas: caprino-->
-                        <article class="col-6 col-xl-3">
-                            <svg width="100%" height="100%" viewBox="0 0 42 42">
-                                <circle cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
-                                <circle cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#ccc" stroke-width="2"></circle>
-                                <!--fíjense en el valor del stroke-dashrray, primero va el porcentaje y luego 100 menos el porcentaje-->
-                                <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#000" stroke-width="2" stroke-dasharray="20 80" stroke-dashoffset="25"></circle>
-                                <!--en el texto corresponde poner el porcentaje-->
-                                <text x="50%" y="29" dominant-baseline="middle" text-anchor="middle" font-size="7">20%</text>
-                                <!--y vayan a buscar a lo que corresponda al centro-->
-                                <image x="15" y="10" width="12" height="12" xlink:href="grafica/icono-cabra.svg" />
-                            </svg>
-                        </article>
-                        <!--cuarto gráfico de pérdidas: hipico-->
-                        <article class="col-6 col-xl-3">
-                            <svg width="100%" height="100%" viewBox="0 0 42 42">
-                                <circle cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
-                                <circle cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#ccc" stroke-width="2"></circle>
-                                <!--fíjense en el valor del stroke-dashrray, primero va el porcentaje y luego 100 menos el porcentaje-->
-                                <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#000" stroke-width="2" stroke-dasharray="25 75" stroke-dashoffset="25"></circle>
-                                <!--en el texto corresponde poner el porcentaje-->
-                                <text x="50%" y="29" dominant-baseline="middle" text-anchor="middle" font-size="7">25%</text>
-                                <!--y vayan a buscar a lo que corresponda al centro-->
-                                <image x="8" y="5" width="27" height="27" xlink:href="grafica/caballo.png" />
-                            </svg>
-                        </article>                        
-                    </div>
-                </div>
+          <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+            <p>
+              Los pequeños productores agrícolas fueron también afectados con la pérdida de sus ganados y colmenas, que
+              constituían parte importante de su capital de trabajo. Al rededor de 45.000 especies entre Ovejas, Equinos
+              Bovinos y Caprinos y más de 46.000 colmenas fueron contabilizados como pérdida entre las regiones más
+              afectadas.
+            </p>
+
+            <div class="row pb-5">
+              <!--primer gráfico de pérdidas: abeja-->
+              <article class="col-6 col-xl-3">
+                <svg width="100%" height="100%" viewBox="0 0 42 42">
+                  <circle cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
+                  <circle
+                    cx="21"
+                    cy="21"
+                    r="15.91549430918954"
+                    fill="transparent"
+                    stroke="#ccc"
+                    stroke-width="2"
+                  ></circle>
+                  <!--fíjense en el valor del stroke-dashrray, primero va el porcentaje y luego 100 menos el porcentaje-->
+                  <circle
+                    class="donut-segment"
+                    cx="21"
+                    cy="21"
+                    r="15.91549430918954"
+                    fill="transparent"
+                    stroke="#000"
+                    stroke-width="2"
+                    stroke-dasharray="50 50"
+                    stroke-dashoffset="25"
+                  ></circle>
+                  <!--en el texto corresponde poner el porcentaje-->
+                  <text x="50%" y="29" dominant-baseline="middle" text-anchor="middle" font-size="7">50%</text>
+                  <!--y vayan a buscar a lo que corresponda al centro-->
+                  <image x="15" y="10" width="12" height="12" xlink:href="grafica/icono-abeja.svg" />
+                </svg>
+              </article>
+              <!--segundo gráfico de pérdidas: bovino-->
+              <article class="col-6 col-xl-3">
+                <svg width="100%" height="100%" viewBox="0 0 42 42">
+                  <circle cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
+                  <circle
+                    cx="21"
+                    cy="21"
+                    r="15.91549430918954"
+                    fill="transparent"
+                    stroke="#ccc"
+                    stroke-width="2"
+                  ></circle>
+                  <!--fíjense en el valor del stroke-dashrray, primero va el porcentaje y luego 100 menos el porcentaje-->
+                  <circle
+                    class="donut-segment"
+                    cx="21"
+                    cy="21"
+                    r="15.91549430918954"
+                    fill="transparent"
+                    stroke="#000"
+                    stroke-width="2"
+                    stroke-dasharray="10 90"
+                    stroke-dashoffset="25"
+                  ></circle>
+                  <!--en el texto corresponde poner el porcentaje-->
+                  <text x="50%" y="29" dominant-baseline="middle" text-anchor="middle" font-size="7">10%</text>
+                  <!--y vayan a buscar a lo que corresponda al centro-->
+                  <image x="15" y="10" width="12" height="12" xlink:href="grafica/icono-vaca.svg" />
+                </svg>
+              </article>
+              <!--tercer gráfico de pérdidas: caprino-->
+              <article class="col-6 col-xl-3">
+                <svg width="100%" height="100%" viewBox="0 0 42 42">
+                  <circle cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
+                  <circle
+                    cx="21"
+                    cy="21"
+                    r="15.91549430918954"
+                    fill="transparent"
+                    stroke="#ccc"
+                    stroke-width="2"
+                  ></circle>
+                  <!--fíjense en el valor del stroke-dashrray, primero va el porcentaje y luego 100 menos el porcentaje-->
+                  <circle
+                    class="donut-segment"
+                    cx="21"
+                    cy="21"
+                    r="15.91549430918954"
+                    fill="transparent"
+                    stroke="#000"
+                    stroke-width="2"
+                    stroke-dasharray="20 80"
+                    stroke-dashoffset="25"
+                  ></circle>
+                  <!--en el texto corresponde poner el porcentaje-->
+                  <text x="50%" y="29" dominant-baseline="middle" text-anchor="middle" font-size="7">20%</text>
+                  <!--y vayan a buscar a lo que corresponda al centro-->
+                  <image x="15" y="10" width="12" height="12" xlink:href="grafica/icono-cabra.svg" />
+                </svg>
+              </article>
+              <!--cuarto gráfico de pérdidas: hipico-->
+              <article class="col-6 col-xl-3">
+                <svg width="100%" height="100%" viewBox="0 0 42 42">
+                  <circle cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
+                  <circle
+                    cx="21"
+                    cy="21"
+                    r="15.91549430918954"
+                    fill="transparent"
+                    stroke="#ccc"
+                    stroke-width="2"
+                  ></circle>
+                  <!--fíjense en el valor del stroke-dashrray, primero va el porcentaje y luego 100 menos el porcentaje-->
+                  <circle
+                    class="donut-segment"
+                    cx="21"
+                    cy="21"
+                    r="15.91549430918954"
+                    fill="transparent"
+                    stroke="#000"
+                    stroke-width="2"
+                    stroke-dasharray="25 75"
+                    stroke-dashoffset="25"
+                  ></circle>
+                  <!--en el texto corresponde poner el porcentaje-->
+                  <text x="50%" y="29" dominant-baseline="middle" text-anchor="middle" font-size="7">25%</text>
+                  <!--y vayan a buscar a lo que corresponda al centro-->
+                  <image x="8" y="5" width="27" height="27" xlink:href="grafica/caballo.png" />
+                </svg>
+              </article>
             </div>
-        </section>
-
-        <section class="container py-4">
-            <div class="row">
-                <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
-                    <h3 class="text-center">Zonas más afectadas</h3>
-                    <p>Si bien se estima que la extensión total de territorios afectados fue cercana a las 500.000 hectáreas, el catastro efectuado por tipos de uso de suelo da cuenta de una cifra de 467.538 hectáreas, entre las regiones de Coquimbo y La Araucanía, siendo la región del Maule la más afectada con alrededor de 280.000 hectáreas.</p>
-                </div>
-
-                <div class="text-center">
-                    <!--Muestra la imagen más ancha o la cuadrada según pantalla-->
-                    <object data="grafica/mapa-min.svg" type="image/svg+xml" class="d-md-none w-75 mx-auto"></object>
-                    <object data="grafica/mapa-min.svg" type="image/svg+xml" class="d-none d-md-block w-50 mx-auto"></object>
-                    <!--Se muestra o no por una clase de Bootstrap que responde al ancho de pantalla-->
-                </div>
-
-                <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto mt-4">
-                    <p>Por tipo de uso suelo, el destinado a plantaciones forestales fue el más afectado, también con alrededor de 280.000 hectáreas.</p>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="container">
-            <div class="row">
-                <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
-                    <h3 class="text-center">Aeronaves al rescate</h3>
-                    <p>Se movilizaron un total de 1.575 brigadistas de CONAF. 1083 combatientes de BRIFE y BRIFAR y 631 combatientes de la cooperación internacional, que en total suman 3.294 combatientes en la línea de fuego.</p>
-                </div>
-            </div>
+          </div>
         </div>
-                    <!--Muestra la imagen más ancha o la cuadrada según pantalla-->
-                    <img src="grafica/Rescate-responsive.jpg" class="d-md-none bg-light w-100">
-                    <img src="grafica/Rescate-final.jpg" class="d-none d-md-block w-100"></object>
-                    <!--Se muestra o no por una clase de Bootstrap que responde al ancho de pantalla-->
-            <div class="container">
-            <div class="row">
-                <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto mt-4">
-                    <p>Junto con ello se entregaron elementos de emergencia para personas afectadas o damnificadas(caja de alimentos, agua potable, mascarilla desechable, vivienda de emergencia, etc).</p>
-                </div>
-            </div>
+      </section>
+
+      <section class="container py-4">
+        <div class="row">
+          <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+            <h3 class="text-center">Zonas más afectadas</h3>
+            <p>
+              Si bien se estima que la extensión total de territorios afectados fue cercana a las 500.000 hectáreas, el
+              catastro efectuado por tipos de uso de suelo da cuenta de una cifra de 467.538 hectáreas, entre las
+              regiones de Coquimbo y La Araucanía, siendo la región del Maule la más afectada con alrededor de 280.000
+              hectáreas.
+            </p>
+          </div>
+
+          <div class="text-center">
+            <!--Muestra la imagen más ancha o la cuadrada según pantalla-->
+            <object data="grafica/mapa-min.svg" type="image/svg+xml" class="d-md-none w-75 mx-auto"></object>
+            <object data="grafica/mapa-min.svg" type="image/svg+xml" class="d-none d-md-block w-50 mx-auto"></object>
+            <!--Se muestra o no por una clase de Bootstrap que responde al ancho de pantalla-->
+          </div>
+
+          <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto mt-4">
+            <p>
+              Por tipo de uso suelo, el destinado a plantaciones forestales fue el más afectado, también con alrededor
+              de 280.000 hectáreas.
+            </p>
+          </div>
         </div>
-    </section>
+      </section>
 
-
-
-        <section class="container pt-4 pb-5">
-            <div class="row">
-                <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
-                    <h3 class="text-center">Emisiones de Carbono</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacinia rutrum felis, ut aliquam odio finibus eu. Pellentesque ligula arcu, rhoncus in enim vel, aliquam accumsan tortor. Cras sagittis vestibulum libero quis facilisis. Donec nec nisi ac sapien feugiat luctus vel elementum odio. Ut eleifend neque neque, auctor vestibulum eros malesuada quis.</p>
-                </div>
-
-                <div class="col-md-11 col-lg-10 col-xl-9 col-xxl-8 mx-auto pt-3 pb-4">
-                    <!--Muestra la imagen más ancha o la cuadrada según pantalla-->
-                    <img src="grafica/arboles-100.jpg" class="d-md-none w-100">
-                    <img src="grafica/arboles-100.jpg" class="d-none d-md-block w-100"></object>
-                    <!--Se muestra o no por una clase de Bootstrap que responde al ancho de pantalla-->
-                </div>
-
-                <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacinia rutrum felis, ut aliquam odio finibus eu. Pellentesque ligula arcu, rhoncus in enim vel, aliquam accumsan tortor. Cras sagittis vestibulum libero quis facilisis. Donec nec nisi ac sapien feugiat luctus vel elementum odio. Ut eleifend neque neque, auctor vestibulum eros malesuada quis.</p>
-                </div>
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+              <h3 class="text-center">Aeronaves al rescate</h3>
+              <p>
+                Se movilizaron un total de 1.575 brigadistas de CONAF. 1083 combatientes de BRIFE y BRIFAR y 631
+                combatientes de la cooperación internacional, que en total suman 3.294 combatientes en la línea de
+                fuego.
+              </p>
             </div>
-        </section>
+          </div>
+        </div>
+        <!--Muestra la imagen más ancha o la cuadrada según pantalla-->
+        <img src="grafica/Rescate-responsive.jpg" class="d-md-none bg-light w-100" />
+        <img src="grafica/Rescate-final.jpg" class="d-none d-md-block w-100" />
+        <!--Se muestra o no por una clase de Bootstrap que responde al ancho de pantalla-->
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto mt-4">
+              <p>
+                Junto con ello se entregaron elementos de emergencia para personas afectadas o damnificadas(caja de
+                alimentos, agua potable, mascarilla desechable, vivienda de emergencia, etc).
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+              <h3 class="text-center">Emisiones de Carbono</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacinia rutrum felis, ut aliquam odio
+                finibus eu. Pellentesque ligula arcu, rhoncus in enim vel, aliquam accumsan tortor. Cras sagittis
+                vestibulum libero quis facilisis. Donec nec nisi ac sapien feugiat luctus vel elementum odio. Ut
+                eleifend neque neque, auctor vestibulum eros malesuada quis.
+              </p>
+            </div>
+            <div class="col-md-11 col-lg-10 col-xl-9 col-xxl-8 mx-auto pt-3 pb-4">
+              <!--Muestra la imagen más ancha o la cuadrada según pantalla-->
+              <!--Se muestra o no por una clase de Bootstrap que responde al ancho de pantalla-->
+            </div>
+            <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacinia rutrum felis, ut aliquam odio
+                finibus eu. Pellentesque ligula arcu, rhoncus in enim vel, aliquam accumsan tortor. Cras sagittis
+                vestibulum libero quis facilisis. Donec nec nisi ac sapien feugiat luctus vel elementum odio. Ut
+                eleifend neque neque, auctor vestibulum eros malesuada quis.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <aside>
+    <!-- <img src="grafica/arboles-negros.svg" class="before-footer"> -->
+    <footer>
+      <div class="container text-white">
+        <div class="row py-5">
+          <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto small">
+            <p>
+              <strong>Créditos</strong>. Hecho por José Carter, Verónica Gatica, Francisca Guerrero, Constanza
+              Valdovinos, Benjamín Vicente
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row py-5">
+          <div class="col-sm-12 pb-3">
+            <h4 class="text-black-50 text-center mb-2 w-75 mx-auto">
+              Más sobre vulnerabilidades y desastres socionaturales en Chile
+            </h4>
+          </div>
+          <div class="col-sm-4">
+            <div class="card border-0 rounded-0 shadow-sm">
+              <img
+                src="https://raw.githubusercontent.com/profesorfaco/dno075-2021-2/main/clase-16/falla_v2/img/grupo-rinihuazo.jpg"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <p class="card-text small">
+                  <a href="#" class="link-dark fw-bold">El Riñihuazo</a> es el nombre dado al aumento de volumen en el
+                  lago Riñihue tras el terremoto de Valdivia de 1960, producto de tres deslizamientos de tierra que
+                  bloquearon su desagüe natural.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card border-0 rounded-0 shadow-sm">
+              <img
+                src="https://raw.githubusercontent.com/profesorfaco/dno075-2021-2/main/clase-16/rinihuazo_v2/img/grupo-falla.jpg"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <p class="card-text small">
+                  <a href="#" class="link-dark fw-bold">La Falla de Ramón</a> es una falla geológica activa, que se
+                  encuentra situada al oriente de Santiago, la capital de Chile, siguiendo el pie del cerro de la sierra
+                  de Ramón a la que debe su nombre.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card border-0 rounded-0 shadow-sm">
+              <img
+                src="https://raw.githubusercontent.com/profesorfaco/dno075-2021-2/main/clase-16/rinihuazo_v2/img/grupo-volcan.jpg"
+                class="card-img-top"
+              />
+              <div class="card-body small">
+                <p class="card-text">
+                  <a href="#" class="link-dark fw-bold">El volcán Chaitén</a> entró en erupción el 2008, de manera
+                  violenta e inesperada, causando la destrucción total de la ciudad del mismo nombre, donde tuvieron que
+                  ser evacuadas 8000 personas.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid bg-black small text-white-50">
         <div class="container">
-            <div class="row py-5">
-                <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto small">
-                    <p><strong>Créditos</strong>. Hecho por José Carter, Verónica Gatica, Francisca Guerrero, Constanza Valdovinos, Benjamín Vicente</p>
-                </div>
+          <div class="row">
+            <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+              <p class="pt-3 text-center d-flex justify-content-between align-items-center">
+                <span>INFOGRAFÍA DIGITAL</span>
+                <a href="https://diseno.uc.cl/" target="_blank" class="link-light">DISEÑO UC</a>
+                <span>DICIEMBRE 2021</span>
+              </p>
             </div>
+          </div>
         </div>
-    </aside>
-
-    <footer class="bg-light">
-        <div class="container">
-            <div class="row py-5">
-                <div class="col-sm-12 pb-3">
-                    <h4 class="text-black-50 text-center mb-2 w-75 mx-auto">Más sobre vulnerabilidades y desastres socionaturales en Chile</h4>
-                </div>
-                <div class="col-sm-4">
-                    <div class="card border-0 rounded-0 shadow-sm ">
-                        <img src="https://raw.githubusercontent.com/profesorfaco/dno075-2021-2/main/clase-16/falla_v2/img/grupo-rinihuazo.jpg" class="card-img-top" />
-                        <div class="card-body">
-                            <p class="card-text small">
-                                <a href="#" class="link-dark fw-bold">El Riñihuazo</a> es el nombre dado al aumento de volumen en el lago Riñihue tras el terremoto de Valdivia de 1960, producto de tres deslizamientos de tierra que
-                                bloquearon su desagüe natural.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="card border-0 rounded-0 shadow-sm ">
-                        <img src="https://raw.githubusercontent.com/profesorfaco/dno075-2021-2/main/clase-16/rinihuazo_v2/img/grupo-falla.jpg" class="card-img-top" />
-                        <div class="card-body">
-                            <p class="card-text small">
-                                <a href="#" class="link-dark fw-bold">La Falla de Ramón</a> es una falla geológica activa, que se encuentra situada al oriente de Santiago, la capital de Chile, siguiendo el pie del cerro de la sierra de
-                                Ramón a la que debe su nombre.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="card border-0 rounded-0 shadow-sm ">
-                        <img src="https://raw.githubusercontent.com/profesorfaco/dno075-2021-2/main/clase-16/rinihuazo_v2/img/grupo-volcan.jpg" class="card-img-top" />
-                        <div class="card-body small">
-                            <p class="card-text">
-                                <a href="#" class="link-dark fw-bold">El volcán Chaitén</a> entró en erupción el 2008, de manera violenta e inesperada, causando la destrucción total de la ciudad del mismo nombre, donde tuvieron que ser
-                                evacuadas 8000 personas.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid bg-black small text-white-50">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
-                        <p class="pt-3 text-center d-flex justify-content-between align-items-center">
-                            <span>INFOGRAFÍA DIGITAL</span> <a href="https://diseno.uc.cl/" target="_blank" class="link-light">DISEÑO UC</a> <span>DICIEMBRE 2021</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
