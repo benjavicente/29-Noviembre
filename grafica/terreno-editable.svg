@@ -8,34 +8,34 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
-   sodipodi:docname="terreno-editable.svg"
-   id="svg8"
-   version="1.1"
-   viewBox="0 0 2327.9722 359.40598"
+   width="2327.9722mm"
    height="359.40598mm"
-   width="2327.9722mm">
+   viewBox="0 0 2327.9722 359.40598"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="terreno-editable.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)">
   <defs
      id="defs2" />
   <sodipodi:namedview
-     inkscape:window-maximized="0"
-     inkscape:window-y="0"
-     inkscape:window-x="2024"
-     inkscape:window-height="1041"
-     inkscape:window-width="1260"
-     showgrid="false"
-     inkscape:document-rotation="0"
-     inkscape:current-layer="layer1"
-     inkscape:document-units="mm"
-     inkscape:cy="-4816.1039"
-     inkscape:cx="8121.7083"
-     inkscape:zoom="0.015467961"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0.0"
-     borderopacity="1.0"
-     bordercolor="#666666"
+     id="base"
      pagecolor="#ffffff"
-     id="base" />
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.175"
+     inkscape:cx="3561.4274"
+     inkscape:cy="1162.422"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -48,10 +48,10 @@
     </rdf:RDF>
   </metadata>
   <g
-     transform="translate(1586.0664,-274.01016)"
-     id="layer1"
+     inkscape:label="Capa 1"
      inkscape:groupmode="layer"
-     inkscape:label="Capa 1">
+     id="layer1"
+     transform="translate(1586.0664,-274.01016)">
     <image
        sodipodi:absref="D:\repos\cursos\DNO075\29-Noviembre\grafica\tipos-suelo\1.png"
        xlink:href="tipos-suelo/1.png"
@@ -65,65 +65,65 @@
        sodipodi:absref="D:\repos\cursos\DNO075\29-Noviembre\grafica\tipos-suelo\2.png"
        xlink:href="tipos-suelo/2.png"
        y="274.01016"
-       x="-480.99847"
+       x="-485.80933"
        width="1222.9042"
        height="285.75"
        preserveAspectRatio="none"
        id="image857" />
     <text
-       id="text877"
-       y="632.54517"
-       x="-1078.9919"
+       xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:89.1822px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;stroke-width:2.22956"
-       xml:space="preserve"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:89.1822px;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:2.22956"
-         y="632.54517"
-         x="-1078.9919"
+       x="-1078.9919"
+       y="632.54517"
+       id="text877"><tspan
+         sodipodi:role="line"
          id="tspan875"
-         sodipodi:role="line">60%</tspan></text>
+         x="-1078.9919"
+         y="632.54517"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:89.1822px;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:2.22956">60%</tspan></text>
     <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:89.1823px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;stroke-width:2.22956"
-       x="-419.01367"
+       id="text877-4"
        y="632.54523"
-       id="text877-4"><tspan
-         sodipodi:role="line"
+       x="-423.82452"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:89.1823px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;stroke-width:2.22956"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:89.1823px;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:2.22956"
+         y="632.54523"
+         x="-423.82452"
          id="tspan875-0"
-         x="-419.01367"
-         y="632.54523"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:89.1823px;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:2.22956">15%</tspan></text>
-    <text
-       id="text877-4-0"
-       y="632.54523"
-       x="-136.0977"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:89.1823px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;stroke-width:2.22956"
-       xml:space="preserve"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:89.1823px;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:2.22956"
-         y="632.54523"
-         x="-136.0977"
-         id="tspan875-0-4"
-         sodipodi:role="line">17%</tspan></text>
+         sodipodi:role="line">15%</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:89.1823px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;stroke-width:2.22956"
-       x="129.03368"
+       x="-140.90855"
        y="632.54523"
-       id="text877-4-0-7"><tspan
+       id="text877-4-0"><tspan
          sodipodi:role="line"
-         id="tspan875-0-4-1"
-         x="129.03368"
+         id="tspan875-0-4"
+         x="-140.90855"
          y="632.54523"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:89.1823px;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:2.22956">7%</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:89.1823px;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:2.22956">17%</tspan></text>
     <text
-       id="text877-4-0-7-1"
+       id="text877-4-0-7"
        y="632.54523"
-       x="303.94492"
+       x="124.22282"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:89.1823px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;stroke-width:2.22956"
        xml:space="preserve"><tspan
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:89.1823px;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:2.22956"
          y="632.54523"
-         x="303.94492"
+         x="124.22282"
+         id="tspan875-0-4-1"
+         sodipodi:role="line">7%</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:89.1823px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;stroke-width:2.22956"
+       x="299.13406"
+       y="632.54523"
+       id="text877-4-0-7-1"><tspan
+         sodipodi:role="line"
          id="tspan875-0-4-1-7"
-         sodipodi:role="line">1%</tspan></text>
+         x="299.13406"
+         y="632.54523"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:89.1823px;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:2.22956">1%</tspan></text>
   </g>
 </svg>
